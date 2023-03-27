@@ -24,13 +24,18 @@ public class RatingAnalysis {
 
         job.setMapperClass(ChainMapper.class);
 
-        job.setCombinerClass(RatingReducer.class);
+        //job.setCombinerClass(RatingReducer.class);
         job.setReducerClass(RatingReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(DoubleWritable.class);
 
         FileInputFormat.addInputPath(job, new Path("hdfs://localhost:9000/user/hadoop/input/data.csv"));
-        FileOutputFormat.setOutputPath(job, new Path("hdfs://localhost:9000/user/hadoop/output/rating"));
+        Path outPath = new Path("hdfs://localhost:9000/user/hadoop/output/rating");
+
+        FileOutputFormat.setOutputPath(job, outPath);
+
+        outPath.getFileSystem(conf).delete(outPath, true);
+
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }

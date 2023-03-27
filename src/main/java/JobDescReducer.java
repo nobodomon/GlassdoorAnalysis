@@ -5,8 +5,8 @@ import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
 
 public class JobDescReducer extends Reducer<Text, IntWritable, Text, Text> {
-
-    public void reduce(Text key, Iterable<IntWritable> values, Reducer.Context context) throws IOException, InterruptedException {
+    @Override
+    public void reduce(Text key, Iterable<IntWritable> values, Reducer<Text, IntWritable, Text, Text>.Context context) throws IOException, InterruptedException {
         int totalCount = 0;
         int individualisticCount = 0;
         int collectivisticCount = 0;

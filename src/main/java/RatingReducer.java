@@ -8,8 +8,8 @@ import java.util.HashMap;
 
 public class RatingReducer extends Reducer<Text, DoubleWritable, Text, DoubleWritable> {
     private HashMap<String, Double[]> companyRatings = new HashMap<>();
-
-    protected void reduce(Text key, Iterable<DoubleWritable> values, Reducer.Context context) throws IOException, InterruptedException {
+    @Override
+    protected void reduce(Text key, Iterable<DoubleWritable> values, Reducer<Text, DoubleWritable, Text, DoubleWritable>.Context context) throws IOException, InterruptedException {
         double totalRating = 0;
         double count = 0;
 

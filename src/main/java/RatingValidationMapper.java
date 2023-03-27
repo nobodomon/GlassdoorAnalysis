@@ -19,7 +19,7 @@ public class RatingValidationMapper extends Mapper<LongWritable, Text, LongWrita
         }else{
             try{
                 double rating = Double.parseDouble(line[1]);
-                if(rating < 1 || rating > 5){
+                if(rating < 10 || rating > 50){
                     return false;
                 }
             }catch(Exception e){

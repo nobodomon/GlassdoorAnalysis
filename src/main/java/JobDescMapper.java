@@ -22,8 +22,21 @@ public class JobDescMapper extends Mapper<LongWritable, Text, Text, IntWritable>
         String jobDesc = fields[4].toLowerCase();
         int isIndividualistic = 0;
         int isCollectivistic = 0;
-        List<String> individualisticKeywords = Arrays.asList("independent", "autonomous", "self-reliant");
-        List<String> collectivisticKeywords = Arrays.asList("team", "collaboration", "community");
+        List<String> individualisticKeywords = Arrays.asList("independent", "autonomous", "self-reliant", "job", "solution", "operate", "knowledge", "comply", "degree", "legislation",
+                "technology", "write", "deliver", "sell", "learn", "software", "performance", "project", "service", "healthcare",
+                "perform", "compliance", "emergency", "risk", "bachelor", "issue", "retail", "conflict", "accounting", "forecast",
+                "negotiation", "achieve", "jurisdiction", "quality", "information", "territory", "training", "report", "tool",
+                "presentation", "problem", "success", "implement", "individual", "engineering", "order", "result", "negotiate",
+                "specialist", "deal", "operation", "promote", "study", "qualification", "program", "self", "execute", "initiative",
+                "task", "win,wealth", "education", "experience", "management", "opportunities", "solutions", "innovative", "creative",
+                "competitive", "individual responsibility", "self-reliance", "personal initiative");
+        List<String> collectivisticKeywords = Arrays.asList("team", "collaboration", "community", "customer", "team,partner", "people", "relationship", "communication",
+                "support", "contact", "understanding", "responsibility", "care", "group", "communicate", "staff", "manner",
+                "help", "follow", "share", "partner", "support", "home,assist", "family", "serve", "consultant", "cooperation",
+                "shared goals", "interdependence", "mutual support", "synergy", "harmony", "consensus", "social bonds", "solidarity",
+                "reciprocity", "collective identity", "integration", "interconnectedness", "alliance", "cohesive", "teamwork",
+                "cohesive group", "interpersonal skills", "relationship-building", "community-minded", "social responsibility",
+                "unity", "collective achievement", "we-focused", "cooperative spirit");
         for (String keyword : individualisticKeywords) {
             if (jobDesc.contains(keyword)) {
                 isIndividualistic = 1;
