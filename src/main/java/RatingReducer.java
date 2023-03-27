@@ -20,12 +20,12 @@ public class RatingReducer extends Reducer<Text, DoubleWritable, Text, DoubleWri
         }
 
         // Save the total rating and count for each company in a HashMap
-        Double[] ratingCount = new Double[]{totalRating, count};
-        companyRatings.put(key.toString(), ratingCount);
+            Double[] ratingCount = new Double[]{totalRating, count};
+            companyRatings.put(key.toString(), ratingCount);
     }
 
     @Override
-    public void cleanup(Context context) throws IOException, InterruptedException {
+    public void cleanup(Reducer<Text, DoubleWritable, Text, DoubleWritable>.Context context) throws IOException, InterruptedException {
         // Calculate and output the average rating for each company
         for (String company : companyRatings.keySet()) {
             Double avgRating = (double) companyRatings.get(company)[0] / companyRatings.get(company)[1];

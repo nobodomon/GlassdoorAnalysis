@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="JobdescAnalysis.jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JobdescAnalysis_jar</output-path>
+    <root id="archive" name="GlassdoorAnalysis.jar">
+      <element id="module-output" name="GlassdoorAnalysis" />
+    </root>
+  </artifact>
+</component>

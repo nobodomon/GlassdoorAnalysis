@@ -39,24 +39,18 @@ public class JobDescMapper extends Mapper<LongWritable, Text, Text, IntWritable>
                 "unity", "collective achievement", "we-focused", "cooperative spirit");
         for (String keyword : individualisticKeywords) {
             if (jobDesc.contains(keyword)) {
-                isIndividualistic = 1;
-                break;
+                isIndividualistic++;
             }
         }
         for (String keyword : collectivisticKeywords) {
             if (jobDesc.contains(keyword)) {
-                isCollectivistic = 1;
-                break;
+                isCollectivistic++;
             }
         }
 
+
+        int score = isIndividualistic - isCollectivistic;
         // Output company name and a count of 1, and separate counts for individualistic and collectivistic job descriptions
-        context.write(company, new IntWritable(1));
-        if (isIndividualistic == 1) {
-            context.write(new Text("-" + company.toString()), new IntWritable(1));
-        }
-        if (isCollectivistic == 1) {
-            context.write(new Text("+" + company.toString()), new IntWritable(1));
-        }
+        context.write(company, new IntWritable(score));
     }
 }

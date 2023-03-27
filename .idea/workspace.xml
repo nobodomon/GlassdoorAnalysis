@@ -5,28 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af35d838-d0c4-45e1-848b-cd94c59e078b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/JobDescAnalysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JobDescValidationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/GlassdoorAnalysis_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/GlassdoorAnalysis_jar/GlassdoorAnalysis.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/GlassdoorAnalysis_jar/GlassdoorAnalysis.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ReviewAnalysis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ReviewMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ReviewReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ReviewValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JobDescAnalysis_jar/GlassdoorAnalysis.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JobDescAnalysis_jar/GlassdoorAnalysis.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JobDescMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JobDescMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JobDescReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JobDescReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RatingAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RatingAnalysis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RatingReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RatingReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RatingValidationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RatingValidationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/JobDescMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JobDescMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/JobDescReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JobDescReducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RatingAnalysis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RatingAnalysis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RatingReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RatingReducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RatingValidationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RatingValidationMapper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +51,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/nobod/Desktop/git/GlassdoorAnalysis",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",

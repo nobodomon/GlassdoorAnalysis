@@ -7,25 +7,19 @@ import java.io.IOException;
 public class JobDescReducer extends Reducer<Text, IntWritable, Text, Text> {
     @Override
     public void reduce(Text key, Iterable<IntWritable> values, Reducer<Text, IntWritable, Text, Text>.Context context) throws IOException, InterruptedException {
-        int totalCount = 0;
-        int individualisticCount = 0;
-        int collectivisticCount = 0;
+        int totalScore = 0;
+        int totalJobs = 0;
 
         // Sum up the counts for each company and for individualistic/collectivistic job descriptions
         for (IntWritable value : values) {
-            totalCount += value.get();
-            if (key.toString().startsWith("-")) {
-                individualisticCount += value.get();
-            } else if (key.toString().startsWith("+")) {
-                collectivisticCount += value.get();
-            }
+            totalScore += value.get();
+            totalJobs++;
         }
 
         // Output the company name and the analysis of job descriptions
         StringBuilder sb = new StringBuilder();
-        sb.append("Total jobs: ").append(totalCount).append(", ");
-        sb.append("Individualistic jobs: ").append(individualisticCount).append(", ");
-        sb.append("Collectivistic jobs: ").append(collectivisticCount);
+        sb.append("Total score: ").append(totalScore).append(", ");
+        sb.append("Total jobs: ").append(totalJobs).append(", ");
         context.write(key, new Text(sb.toString()));
     }
 }
