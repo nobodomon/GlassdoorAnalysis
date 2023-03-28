@@ -29,8 +29,8 @@ public class RatingAnalysis {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(DoubleWritable.class);
 
-        FileInputFormat.addInputPath(job, new Path("hdfs://localhost:9000/user/hadoop/input/data.csv"));
-        Path outPath = new Path("hdfs://localhost:9000/user/hadoop/output/rating");
+        FileInputFormat.addInputPath(job, new Path("hdfs://localhost:9000/user/hadoop/input/" + args[1]));
+        Path outPath = new Path("hdfs://localhost:9000/user/hadoop/output/review/" + args[2]);
 
         FileOutputFormat.setOutputPath(job, outPath);
 
