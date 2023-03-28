@@ -1,0 +1,14 @@
+Facebook	Sentiments      Average pros score: 2.4863731656184487, Average cons score: 1.9119496855345912, Average summary score: 2.190775681341719
+Accenture	Sentiments      Average pros score: 2.6842105263157894, Average cons score: 1.7131578947368422, Average summary score: 2.4513157894736843
+Standard Charted 	Sentiments      Average pros score: 2.462178517397882, Average cons score: 1.9379727685325265, Average summary score: 2.283661119515885
+Paypal	Sentiments      Average pros score: 2.544921875, Average cons score: 1.892578125, Average summary score: 2.33203125
+GovTech	Sentiments      Average pros score: 2.769230769230769, Average cons score: 1.8461538461538463, Average summary score: 2.1538461538461537
+DBS-Bank	Sentiments      Average pros score: 2.2982456140350878, Average cons score: 1.8859649122807018, Average summary score: 2.1008771929824563
+HSBC-Bank	Sentiments      Average pros score: 2.5244755244755246, Average cons score: 1.8951048951048952, Average summary score: 2.272727272727273
+NCS	Sentiments      Average pros score: 2.2941176470588234, Average cons score: 1.9313725490196079, Average summary score: 2.0686274509803924
+J-P-Morgan	Sentiments      Average pros score: 2.6013071895424837, Average cons score: 1.908496732026144, Average summary score: 2.337690631808279
+Tesla	Sentiments      Average pros score: 2.5492957746478875, Average cons score: 1.8438967136150235, Average summary score: 2.2922535211267605
+Microsoft	Sentiments      Average pros score: 2.45, Average cons score: 2.15, Average summary score: 2.15
+Dell Technologies	Sentiments      Average pros score: 2.736559139784946, Average cons score: 1.7580645161290323, Average summary score: 2.629032258064516
+Google	Sentiments      Average pros score: 2.6601215521271624, Average cons score: 1.9513791491351098, Average summary score: 2.482468443197756
+Lenovo	Sentiments      Average pros score: 2.5833333333333335, Average cons score: 1.9351851851851851, Average summary score: 2.1296296296296298
