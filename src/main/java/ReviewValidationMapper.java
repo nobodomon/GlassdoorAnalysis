@@ -17,7 +17,7 @@ public class ReviewValidationMapper extends Mapper<LongWritable, Text, LongWrita
     private  boolean isValid(String review){
         String[] words = review.split(",");
 
-        if(words[0] == "__typename"){
+        if(words[0].equals("__typename")){
             return false;
         }
 
